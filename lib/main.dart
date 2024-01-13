@@ -188,3 +188,30 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+//this was a different project so follow accordingly(just a basic counter app)..It's corresponding page is counter_page.dart
+
+
+// ignore_for_file: prefer_const_constructors
+
+import 'package:flutter/material.dart';
+import 'pages/counter_page.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CounterPage(),
+    );
+  }
+}
+
